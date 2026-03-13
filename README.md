@@ -26,7 +26,7 @@ O objetivo deste projeto é demonstrar, de forma didática e modular, o funciona
 - avaliação de desempenho
 - visualização da fronteira de decisão
 
-# Modelo matemático
+## Modelo matemático
 
 O perceptron calcula uma combinação linear das entradas:
 
@@ -48,9 +48,9 @@ onde:
 - $\eta$ é a taxa de aprendizado  
 - $y$ é o rótulo verdadeiro
 
-# Funcionalidades
+## Funcionalidades
 
-## 1. Implementação do Perceptron
+### 1. Implementação do Perceptron
 
 O projeto implementa um perceptron de camada simples capaz de aprender problemas **linearmente separáveis** como:
 
@@ -60,7 +60,7 @@ O projeto implementa um perceptron de camada simples capaz de aprender problemas
 
 Também demonstra a limitação clássica do perceptron ao tentar aprender o problema **XOR**, que não é linearmente separável.
 
-## 2. Pipeline de treinamento
+### 2. Pipeline de treinamento
 
 O pipeline inclui:
 
@@ -70,13 +70,13 @@ O pipeline inclui:
 - treinamento do perceptron
 - cálculo de acurácia
 
-## 3. Visualização da fronteira de decisão
+### 3. Visualização da fronteira de decisão
 
 Para datasets bidimensionais, o sistema gera gráficos mostrando a **fronteira de decisão aprendida pelo modelo**.
 
 Isso permite visualizar como o perceptron separa as classes no espaço de características.
 
-# Estrutura do projeto
+## Estrutura do projeto
 
 ```
 project/
@@ -103,7 +103,7 @@ project/
 └── README.md
 ```
 
-# Instalação
+## Instalação
 
 Clone o repositório:
 
@@ -132,7 +132,7 @@ Instale as dependências:
 pip install -r requirements.txt
 ```
 
-# Executar experimentos
+## Executar experimentos
 
 Execute o pipeline completo:
 
@@ -149,7 +149,7 @@ chmod +x /scripts/run_perceptron.sh
 ./scripts/run_perceptron.sh
 ```
 
-# Testes automatizados
+## Testes automatizados
 
 O projeto inclui testes utilizando :contentReference[oaicite:4]{index=4}.
 
@@ -168,7 +168,7 @@ Os testes verificam:
 - treinamento do perceptron
 - comportamento esperado em AND e XOR
 
-# Resultados esperados
+## Resultados esperados
 
 | Dataset | Resultado |
 |-------|-------|
