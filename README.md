@@ -7,6 +7,7 @@
 
 ## Sobre o projeto
 
+> [!NOTE]
 Este projeto apresenta a implementação de uma **Rede Neural Artificial do tipo Perceptron**, proposta por [Frank Rosenblatt](https://en.wikipedia.org/wiki/Frank_Rosenblatt) em 1958.
 
 O perceptron é um dos primeiros modelos de neurônio artificial e constitui a base histórica das áreas de:
@@ -24,6 +25,7 @@ O objetivo deste projeto é demonstrar o funcionamento de um perceptron através
 
 ## Modelo matemático
 
+> [!NOTE]
 O perceptron calcula uma combinação linear das entradas:
 
 $y = \mathrm{sign}(w^T x + b)$
@@ -35,6 +37,7 @@ onde:
 - $b$ é o bias  
 - $\mathrm{sign}(\cdot)$ é a função de ativação que define a classe da saída
 
+> [!NOTE]
 Durante o treinamento, os pesos são atualizados pela seguinte regra de aprendizado:
 
 $w_{t+1} = w_t + \eta\, y\, x$
@@ -48,15 +51,17 @@ onde:
 
 ### 1. Implementação do Perceptron
 
+> [!NOTE]
 O projeto implementa um perceptron de camada simples capaz de aprender problemas **linearmente separáveis** como:
 
 - AND
 - OR
 - datasets sintéticos bidimensionais
 
+> [!WARNING]
 Também demonstra a limitação clássica do perceptron ao tentar aprender o problema **XOR**, que não é linearmente separável.
 
-### Treinamento do Perceptron – classificação de regiões
+#### Treinamento do Perceptron – classificação de regiões
 
 O GIF mostra o treinamento do perceptron para classificar regiões como Norte (1) ou Sul (-1) com base em latitude e longitude.  
 Como os dados não são linearmente separáveis, pontos verdes são corretos e vermelhos estão incorretos; a linha azul é a fronteira de decisão.
@@ -67,19 +72,21 @@ Como os dados não são linearmente separáveis, pontos verdes são corretos e v
 
 ### 2. Pipeline de treinamento
 
-O pipeline inclui:
-
-- geração automática de datasets
-- divisão treino/teste
-- normalização com StandardScaler
-- treinamento do perceptron
-- cálculo de acurácia
+> [!NOTE]
+> O pipeline inclui:
+> 
+> - geração automática de datasets
+> - divisão treino/teste
+> - normalização com StandardScaler
+> - treinamento do perceptron
+> - cálculo de acurácia
 
 ### 3. Visualização da fronteira de decisão
 
-Para datasets bidimensionais, o sistema gera gráficos mostrando a **fronteira de decisão aprendida pelo modelo**.
-
-Isso permite visualizar como o perceptron separa as classes no espaço de características.
+> [!NOTE]
+> Para datasets bidimensionais, o sistema gera gráficos mostrando a **fronteira de decisão aprendida pelo modelo**.
+>
+> Isso permite visualizar como o perceptron separa as classes no espaço de características.
 
 ## Estrutura do projeto
 
@@ -108,7 +115,8 @@ RNA-Perceptron/
 └── README.md
 ```
 
-## Instalação
+> [!IMPORTANT]
+> ## Instalação
 
 Clone o repositório:
 
@@ -136,8 +144,8 @@ Instale as dependências:
 ```
 pip install -r requirements.txt
 ```
-
-## Executar experimentos
+> [!IMPORTANT]
+> ## Executar experimentos
 
 Execute o pipeline completo:
 
@@ -153,8 +161,8 @@ chmod +x scripts/run_perceptron.sh
 ```
 ./scripts/run_perceptron.sh
 ```
-
-## Testes automatizados
+> [!IMPORTANT]
+> ## Testes automatizados
 
 O projeto inclui testes automatizados utilizando [pytest](https://pytest.org).
 
@@ -163,15 +171,15 @@ Execute:
 ```
 pytest -v
 ```
-
-Os testes verificam:
-
-- geração de datasets
-- carregamento de dados
-- normalização
-- divisão treino/teste
-- treinamento do perceptron
-- comportamento esperado em AND e XOR
+> [!NOTE]
+> Os testes verificam:
+> 
+> - geração de datasets
+> - carregamento de dados
+> - normalização
+> - divisão treino/teste
+> - treinamento do perceptron
+> - comportamento esperado em AND e XOR
 
 ## Resultados esperados
 
@@ -181,7 +189,11 @@ Os testes verificam:
 | OR | 100% |
 | XOR | Falha esperada |
 
+> [!WARNING]
 Isso demonstra a limitação fundamental do perceptron para problemas **não linearmente separáveis**.
+
+---
 
 * **Autor:** Natam Leão Ferreira
 * **Data de conclusão:** 19/03/2026
+---
