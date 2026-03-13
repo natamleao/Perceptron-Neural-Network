@@ -60,6 +60,15 @@ O projeto implementa um perceptron de camada simples capaz de aprender problemas
 
 Também demonstra a limitação clássica do perceptron ao tentar aprender o problema **XOR**, que não é linearmente separável.
 
+### Treinamento do Perceptron – classificação de regiões
+
+O GIF mostra o treinamento do perceptron para classificar regiões como Norte (1) ou Sul (-1).  
+Como os dados não são linearmente separáveis, pontos verdes são corretos e vermelhos estão incorretos; a linha azul é a fronteira de decisão.
+
+<p align="center">
+  <img src="https://imgur.com/tu7jCk1.gif" width="450">
+</p>
+
 ### 2. Pipeline de treinamento
 
 O pipeline inclui:
