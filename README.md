@@ -26,31 +26,31 @@ O objetivo deste projeto é demonstrar, de forma didática e modular, o funciona
 - avaliação de desempenho
 - visualização da fronteira de decisão
 
-# Modelo Matemático
+# Modelo matemático
 
 O perceptron calcula uma combinação linear das entradas:
 
-<p align="center">
-<img src="https://latex.codecogs.com/png.image?\dpi{120}y=\mathrm{sign}(w^Tx+b)" />
-</p>
+$$
+y = \mathrm{sign}(w^T x + b)
+$$
 
 onde:
 
-- \(x\) representa o vetor de entradas
-- \(w\) representa os pesos sinápticos
-- \(b\) é o bias
-- a função `sign()` define a classe da saída
+- $x$ representa o vetor de entradas  
+- $w$ representa o vetor de pesos sinápticos  
+- $b$ é o bias  
+- $\mathrm{sign}(\cdot)$ é a função de ativação que define a classe da saída
 
-Durante o treinamento, os pesos são atualizados pela regra de aprendizado:
+Durante o treinamento, os pesos são atualizados pela seguinte regra de aprendizado:
 
-\[
-w_{t+1} = w_t + \eta \cdot y \cdot x
-\]
+$$
+w_{t+1} = w_t + \eta\, y\, x
+$$
 
 onde:
 
-- \( \eta \) é a taxa de aprendizado
-- \( y \) é o rótulo verdadeiro
+- $\eta$ é a taxa de aprendizado  
+- $y$ é o rótulo verdadeiro
 
 # Funcionalidades
 
@@ -64,7 +64,7 @@ O projeto implementa um perceptron de camada simples capaz de aprender problemas
 
 Também demonstra a limitação clássica do perceptron ao tentar aprender o problema **XOR**, que não é linearmente separável.
 
-## 2. Pipeline de Treinamento
+## 2. Pipeline de treinamento
 
 O pipeline inclui:
 
@@ -74,13 +74,13 @@ O pipeline inclui:
 - treinamento do perceptron
 - cálculo de acurácia
 
-## 3. Visualização da Fronteira de Decisão
+## 3. Visualização da fronteira de decisão
 
 Para datasets bidimensionais, o sistema gera gráficos mostrando a **fronteira de decisão aprendida pelo modelo**.
 
 Isso permite visualizar como o perceptron separa as classes no espaço de características.
 
-# Estrutura do Projeto
+# Estrutura do projeto
 
 ```
 project/
@@ -136,7 +136,7 @@ Instale as dependências:
 pip install -r requirements.txt
 ```
 
-# Executar Experimentos
+# Executar experimentos
 
 Execute o pipeline completo:
 
@@ -153,7 +153,7 @@ chmod +x /scripts/run_perceptron.sh
 ./scripts/run_perceptron.sh
 ```
 
-# Testes Automatizados
+# Testes automatizados
 
 O projeto inclui testes utilizando :contentReference[oaicite:4]{index=4}.
 
@@ -172,7 +172,7 @@ Os testes verificam:
 - treinamento do perceptron
 - comportamento esperado em AND e XOR
 
-# Resultados Esperados
+# Resultados esperados
 
 | Dataset | Resultado |
 |-------|-------|
