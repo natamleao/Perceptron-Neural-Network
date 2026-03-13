@@ -1,49 +1,190 @@
-<div align="justify">
+# Perceptron Neural Network Implementation
 
-# Implementação de um RNA Perceptron em Python
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![Pytest](https://img.shields.io/badge/Tests-pytest-green)
+![Status](https://img.shields.io/badge/Project-Academic-orange)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
-</div>
+<p align="center">
+  <img src="https://i.imgur.com/jFXlHBs.png" width="450">
+</p>
 
-![Astah](https://i.imgur.com/RX5kDms.jpg)
+## Sobre o projeto
 
-<div align="justify">
+Este projeto apresenta a implementação de uma **Rede Neural Artificial do tipo Perceptron**, proposta por :contentReference[oaicite:0]{index=0} em 1958.
 
-Este projeto é um exemplo de jogo Missile Command em 2D desenvolvido como parte de um trabalho acadêmico na disciplina de Computação Gráfica. O jogo permite que os jogadores defendam sua cidade contra mísseis inimigos.
+O perceptron é um dos primeiros modelos de neurônio artificial e constitui a base histórica das áreas de:
 
-## Funcionalidades Principais
+- :contentReference[oaicite:1]{index=1}
+- :contentReference[oaicite:2]{index=2}
 
-### 1. Defesa da Cidade
-Neste jogo, os jogadores devem defender sua cidade dos mísseis inimigos. Use o mouse para mirar e clique para disparar mísseis contra os inimigos. Ganhe pontos ao destruir os mísseis inimigos antes que eles atinjam sua cidade.
+O objetivo deste projeto é demonstrar, de forma didática e modular, o funcionamento de um perceptron através de:
 
-### 2. Gráficos com OpenGL
-O jogo utiliza a biblioteca OpenGL para renderizar os gráficos, proporcionando uma experiência visual envolvente.
+- geração de datasets
+- treinamento supervisionado
+- normalização de dados
+- avaliação de desempenho
+- visualização da fronteira de decisão
 
-</div>
+# Modelo Matemático
 
-![Cena do Jogo](https://i.imgur.com/Wz093QM.png)
+O perceptron calcula uma combinação linear das entradas:
 
-> [!WARNING]
-> Este jogo é apenas uma demonstração acadêmica e não deve ser utilizado para fins comerciais. Os gráficos e a jogabilidade são simplificados e não representam um produto final.
+y = \text{sign}(w \cdot x + b)
 
-> [!IMPORTANT]
-> ## Como Jogar
-> 1. Clone este repositório em sua máquina local.
-> 2. Certifique-se de ter o GCC (Compilador C++) instalado em sua máquina.
-> 3. Abra um terminal e navegue até o diretório do projeto.
-> 4. Para compilar o jogo, execute o comando `make`. Isso compilará o código-fonte e criará o executável.
-> 5. Para iniciar o jogo, execute o comando `make run`. O jogo será iniciado.
-> 6. No jogo, você deve defender sua cidade dos mísseis inimigos. Use o mouse para mirar e clique com o botão direito para disparar mísseis contra os inimigos.
-> 7. Use `make clean` para apagar todos os arquivos compilados.
-> 8. Para encerrar o jogo, simplesmente feche a janela do jogo ou pressione `Ctrl + C` no terminal.
+onde:
 
-> ## Controles 
-> - Use o mouse para mirar e clique o botão direito para disparar mísseis.
-> - Pressione `Ctrl + C` no terminal para encerrar o jogo.
+- \(x\) representa o vetor de entradas
+- \(w\) representa os pesos sinápticos
+- \(b\) é o bias
+- a função `sign()` define a classe da saída
 
-> [!NOTE]
-> Este projeto é uma implementação simples do jogo Missile Command em 2D implementado em C++ e utiliza a biblioteca OpenGL para gráficos. Ele serve como uma oportunidade de aprendizado para entender os conceitos de programação em C++ e computação gráfica com OpenGL.
+Durante o treinamento, os pesos são atualizados pela regra de aprendizado:
 
-* **Autores:** Billy Grahan, Natam e Victor Wesley
-* **Instituição:** Universidade Federal do Ceará (UFC) - Campus Russas
-* **Disciplina:** Computação Gráfica
-* **Data de Conclusão:** 15/10/2023
+\[
+w_{t+1} = w_t + \eta \cdot y \cdot x
+\]
+
+onde:
+
+- \( \eta \) é a taxa de aprendizado
+- \( y \) é o rótulo verdadeiro
+
+# Funcionalidades
+
+## 1. Implementação do Perceptron
+
+O projeto implementa um perceptron de camada simples capaz de aprender problemas **linearmente separáveis** como:
+
+- AND
+- OR
+- datasets sintéticos bidimensionais
+
+Também demonstra a limitação clássica do perceptron ao tentar aprender o problema **XOR**, que não é linearmente separável.
+
+## 2. Pipeline de Treinamento
+
+O pipeline inclui:
+
+- geração automática de datasets
+- divisão treino/teste
+- normalização com StandardScaler
+- treinamento do perceptron
+- cálculo de acurácia
+
+## 3. Visualização da Fronteira de Decisão
+
+Para datasets bidimensionais, o sistema gera gráficos mostrando a **fronteira de decisão aprendida pelo modelo**.
+
+Isso permite visualizar como o perceptron separa as classes no espaço de características.
+
+# Estrutura do Projeto
+
+```
+project/
+│
+├── data/
+│ ├── raw/ # datasets gerados
+│ └── test/ # datasets usados nos testes
+│
+├── scripts/ # scripts para execução do projeto
+│
+├── src/ # código-fonte principal
+│ ├── config/ # configurações do perceptron
+│ ├── datasets/ # geração e manipulação de datasets
+│ ├── helpers/ # funções auxiliares
+│ ├── models/ # implementação do perceptron
+│ ├── prediction/ # lógica de predição
+│ ├── preprocessing/# normalização e preparação dos dados
+│ ├── training/ # pipeline de treinamento
+│ └── visualization/# visualização da fronteira de decisão
+│
+├── tests/ # testes automatizados (pytest)
+│
+├── requirements.txt # dependências do projeto
+└── README.md
+```
+
+# Instalação
+
+Clone o repositório:
+
+```
+git clone <repo-url>
+cd project
+
+```
+Crie um ambiente virtual:
+
+```
+python -m venv venv
+
+```
+Ative o ambiente:
+
+Linux / MacOS
+
+```
+source venv/bin/activate
+```
+
+Instale as dependências:
+
+```
+pip install -r requirements.txt
+```
+
+# Executar Experimentos
+
+Execute o pipeline completo:
+
+```
+python src/main.py
+```
+
+ou
+```
+chmod +x /scripts/run_perceptron.sh
+```
+
+```
+./scripts/run_perceptron.sh
+```
+
+# Testes Automatizados
+
+O projeto inclui testes utilizando :contentReference[oaicite:4]{index=4}.
+
+Execute:
+
+```
+pytest -v
+```
+
+Os testes verificam:
+
+- geração de datasets
+- carregamento de dados
+- normalização
+- divisão treino/teste
+- treinamento do perceptron
+- comportamento esperado em AND e XOR
+
+# Resultados Esperados
+
+| Dataset | Resultado |
+|-------|-------|
+| AND | 100% |
+| OR | 100% |
+| XOR | Falha esperada |
+
+Isso demonstra a limitação fundamental do perceptron para problemas **não linearmente separáveis**.
+
+# Autor
+
+**Natam Leão Ferreira**  
+
+> Projeto desenvolvido para fins de aprendizado.
+```
+
+* colocar um **GIF do perceptron aprendendo a fronteira de decisão** (fica absurdamente bonito no GitHub).
