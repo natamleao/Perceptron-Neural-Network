@@ -30,7 +30,9 @@ O objetivo deste projeto é demonstrar, de forma didática e modular, o funciona
 
 O perceptron calcula uma combinação linear das entradas:
 
-y = sign(w^T x + b)
+<p align="center">
+<img src="https://latex.codecogs.com/png.image?\dpi{120}y=\mathrm{sign}(w^Tx+b)" />
+</p>
 
 onde:
 
