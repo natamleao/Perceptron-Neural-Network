@@ -2,7 +2,7 @@
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![Pytest](https://img.shields.io/badge/Tests-pytest-green)
-![Status](https://img.shields.io/badge/EM-DESENVOLVIMENTO-orange)
+![Status](https://img.shields.io/badge/Project-Academic-orange)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
 ## Sobre o projeto
