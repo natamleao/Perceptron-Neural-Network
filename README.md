@@ -1,6 +1,6 @@
 <div align="justify">
 
-# Trabalho de Computação Gráfica: Jogo Missile Command (Astah) em C++
+# Implementação de um RNA Perceptron em Python
 
 </div>
 
