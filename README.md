@@ -108,8 +108,8 @@ project/
 Clone o repositório:
 
 ```
-git clone <repo-url>
-cd project
+git clone git@github.com:natamleao/RNA-Perceptron.git
+cd RNA-Perceptron
 
 ```
 Crie um ambiente virtual:
@@ -151,7 +151,7 @@ chmod +x /scripts/run_perceptron.sh
 
 ## Testes automatizados
 
-O projeto inclui testes utilizando :contentReference[oaicite:4]{index=4}.
+O projeto inclui testes automatizados utilizando [pytest](https://pytest.org).
 
 Execute:
 
@@ -170,7 +170,7 @@ Os testes verificam:
 
 ## Resultados esperados
 
-| Dataset | Resultado |
+| Dataset | Resultado/Acurácia |
 |-------|-------|
 | AND | 100% |
 | OR | 100% |
@@ -180,9 +180,4 @@ Isso demonstra a limitação fundamental do perceptron para problemas **não lin
 
 # Autor
 
-**Natam Leão Ferreira**  
-
-> Projeto desenvolvido para fins de aprendizado.
-```
-
-* colocar um **GIF do perceptron aprendendo a fronteira de decisão** (fica absurdamente bonito no GitHub).
+**Natam Leão Ferreira**
