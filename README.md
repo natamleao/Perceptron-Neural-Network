@@ -30,9 +30,7 @@ O objetivo deste projeto é demonstrar, de forma didática e modular, o funciona
 
 O perceptron calcula uma combinação linear das entradas:
 
-$$
-y = \mathrm{sign}(w^T x + b)
-$$
+$y = \mathrm{sign}(w^T x + b)$
 
 onde:
 
@@ -43,9 +41,7 @@ onde:
 
 Durante o treinamento, os pesos são atualizados pela seguinte regra de aprendizado:
 
-$$
-w_{t+1} = w_t + \eta\, y\, x
-$$
+$w_{t+1} = w_t + \eta\, y\, x$
 
 onde:
 
