@@ -11,12 +11,12 @@
 
 ## Sobre o projeto
 
-Este projeto apresenta a implementação de uma **Rede Neural Artificial do tipo Perceptron**, proposta por :contentReference[oaicite:0]{index=0} em 1958.
+Este projeto apresenta a implementação de uma **Rede Neural Artificial do tipo Perceptron**, proposta por [Frank Rosenblatt](https://en.wikipedia.org/wiki/Frank_Rosenblatt) em 1958.
 
 O perceptron é um dos primeiros modelos de neurônio artificial e constitui a base histórica das áreas de:
 
-- :contentReference[oaicite:1]{index=1}
-- :contentReference[oaicite:2]{index=2}
+- [Machine Learning](https://en.wikipedia.org/wiki/Machine_learning)
+- [Artificial Neural Networks](https://en.wikipedia.org/wiki/Artificial_neural_network)
 
 O objetivo deste projeto é demonstrar, de forma didática e modular, o funcionamento de um perceptron através de:
 
