@@ -193,7 +193,6 @@ pytest -v
 Isso demonstra a limitação fundamental do perceptron para problemas **não linearmente separáveis**.
 
 ---
-
 * **Autor:** Natam Leão Ferreira
 * **Data de conclusão:** 19/03/2026
 ---
