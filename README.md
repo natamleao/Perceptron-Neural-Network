@@ -4,6 +4,7 @@
 ![Pytest](https://img.shields.io/badge/Tests-pytest-green)
 ![Status](https://img.shields.io/badge/Project-Academic-orange)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey)
+![Status](https://img.shields.io/badge/Status-Em%Desenvolvimento-orange)
 
 ## Sobre o projeto
 
