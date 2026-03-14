@@ -61,6 +61,11 @@ O projeto implementa um perceptron de camada simples capaz de aprender problemas
 > [!WARNING]
 Também demonstra a limitação clássica do perceptron ao tentar aprender o problema **XOR**, que não é linearmente separável.
 
+> [!NOTE]
+> Para os datasets booleanos (AND, OR, XOR), não é realizada divisão treino/teste,
+> pois o número de amostras é muito pequeno. O objetivo desses experimentos é
+> apenas demonstrar o comportamento teórico do perceptron.
+
 #### Treinamento do Perceptron – classificação de regiões
 
 O GIF mostra o treinamento do perceptron para classificar regiões como Norte (1) ou Sul (-1) com base em latitude e longitude.  
@@ -183,11 +188,14 @@ pytest -v
 
 ## Resultados esperados
 
-| Dataset | Resultado/Acurácia |
-|-------|-------|
-| AND | 100% |
-| OR | 100% |
-| XOR | Falha esperada |
+| Dataset | Comportamento esperado |
+|--------|------------------------|
+| AND | Acurácia próxima de 100% |
+| OR | Acurácia próxima de 100% |
+| XOR | Acurácia menor que 100% (problema não linearmente separável) |
+
+> [!NOTE]
+> O teste automatizado para o dataset XOR verifica apenas que a acurácia **não atinge 100%**, confirmando a limitação do perceptron para problemas não linearmente separáveis.
 
 > [!WARNING]
 Isso demonstra a limitação fundamental do perceptron para problemas **não linearmente separáveis**.
