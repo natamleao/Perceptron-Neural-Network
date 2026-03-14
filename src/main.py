@@ -52,13 +52,17 @@ def train_perceptron():
 
         dataset = Dataset(path, target_column='class')
         X, y = dataset.load()
-
-        X_train, X_test, y_train, y_test = train_test_split_manual(X, y, test_size=0.2, random_seed=42)
-
+        
         scaler = StandardScaler()
+        
+        if name not in ['and', 'or', 'xor']:
+            X_train, X_test, y_train, y_test = train_test_split_manual(X, y, test_size=0.2, random_seed=42)     
 
-        X_train = scaler.fit_transform(X_train)
-        X_test = scaler.transform(X_test)
+            X_train = scaler.fit_transform(X_train)
+            X_test = scaler.transform(X_test)
+            
+        X_train = X_test = scaler.fit_transform(X)
+        y_train = y_test = y
 
         logger = TrainingLogger(enabled=True)
 
