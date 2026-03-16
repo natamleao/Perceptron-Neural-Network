@@ -203,5 +203,5 @@ Isso demonstra a limitação fundamental do perceptron para problemas **não lin
 
 ---
 * **Autor:** Natam Leão Ferreira
-* **Data de conclusão:** 19/03/2026
+* **Conclusão:** 2026
 ---
