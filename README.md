@@ -1,5 +1,3 @@
-<div align="justify">
-  
 # Perceptron Neural Network
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
@@ -7,7 +5,7 @@
 ![Status](https://img.shields.io/badge/Project-Personal-orange)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
-</div>
+---
 
 ## Sobre o projeto
 
@@ -26,6 +24,8 @@ O objetivo deste projeto é demonstrar o funcionamento de um perceptron através
 - normalização de dados
 - avaliação de desempenho
 - visualização da fronteira de decisão
+
+---
 
 ## Modelo matemático
 
@@ -50,6 +50,8 @@ onde:
 
 - $\eta$ é a taxa de aprendizado  
 - $y$ é o rótulo verdadeiro
+
+---
 
 ## Funcionalidades
 
@@ -97,6 +99,8 @@ Como os dados não são linearmente separáveis, pontos verdes são corretos e v
 >
 > Isso permite visualizar como o perceptron separa as classes no espaço de características.
 
+---
+
 ## Estrutura do projeto
 
 ```
@@ -124,6 +128,8 @@ Perceptron-Neural-Network/
 ├── README.md         # Documentação do projeto
 └── LICENSE           # Licença do projeto
 ```
+
+---
 
 > [!IMPORTANT]
 > ## Instalação
@@ -206,8 +212,17 @@ pytest -v
 Isso demonstra a limitação fundamental do perceptron para problemas **não linearmente separáveis**.
 
 ---
-* **Autor:** Natam Leão Ferreira
-* **Conclusão:** 2026
+
+## Licença
+
+Este projeto está licenciado sob a **MIT License**.
+
 ---
 
-</div>
+## Autor
+
+**Natam Leão Ferreira**
+
+Conclusão: **2026**
+
+---
