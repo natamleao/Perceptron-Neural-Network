@@ -30,7 +30,7 @@ O objetivo deste projeto é demonstrar o funcionamento de um perceptron através
 ## Modelo matemático
 
 > [!NOTE]
-O perceptron calcula uma combinação linear das entradas:
+> O perceptron calcula uma combinação linear das entradas:
 
 $y = \mathrm{sign}(w^T x + b)$
 
@@ -42,7 +42,7 @@ onde:
 - $\mathrm{sign}(\cdot)$ é a função de ativação que define a classe da saída
 
 > [!NOTE]
-Durante o treinamento, os pesos são atualizados pela seguinte regra de aprendizado:
+> Durante o treinamento, os pesos são atualizados pela seguinte regra de aprendizado:
 
 $w_{t+1} = w_t + \eta\, y\, x$
 
@@ -58,14 +58,14 @@ onde:
 ### 1. Implementação do Perceptron
 
 > [!NOTE]
-O projeto implementa um perceptron de camada simples capaz de aprender problemas **linearmente separáveis** como:
+> O projeto implementa um perceptron de camada simples capaz de aprender problemas **linearmente separáveis** como:
 
 - AND
 - OR
 - datasets sintéticos bidimensionais
 
 > [!WARNING]
-Também demonstra a limitação clássica do perceptron ao tentar aprender o problema **XOR**, que não é linearmente separável.
+> Também demonstra a limitação clássica do perceptron ao tentar aprender o problema **XOR**, que não é linearmente separável.
 
 > [!NOTE]
 > Para os datasets booleanos (AND, OR, XOR), não é realizada divisão treino/teste,
@@ -209,13 +209,14 @@ pytest -v
 > O teste automatizado para o dataset XOR verifica apenas que a acurácia **não atinge 100%**, confirmando a limitação do perceptron para problemas não linearmente separáveis.
 
 > [!WARNING]
-Isso demonstra a limitação fundamental do perceptron para problemas **não linearmente separáveis**.
+> Isso demonstra a limitação fundamental do perceptron para problemas **não linearmente separáveis**.
 
 ---
 
-## Licença
-
-Este projeto está licenciado sob a **MIT License**.
+> [!WARNING]
+> ## Licença
+>
+> Este projeto está licenciado sob a **MIT License**.
 
 ---
 
