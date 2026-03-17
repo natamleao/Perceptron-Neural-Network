@@ -1,3 +1,5 @@
+<div align="justify">
+  
 # Perceptron Neural Network
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
@@ -5,10 +7,12 @@
 ![Status](https://img.shields.io/badge/Project-Personal-orange)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
+</div>
+
 ## Sobre o projeto
 
 > [!NOTE]
-Este projeto apresenta a implementação de uma **Rede Neural Artificial do tipo Perceptron**, proposta por [Frank Rosenblatt](https://en.wikipedia.org/wiki/Frank_Rosenblatt) em 1958.
+> Este projeto apresenta a implementação de uma **Rede Neural Artificial do tipo Perceptron**, proposta por [Frank Rosenblatt](https://en.wikipedia.org/wiki/Frank_Rosenblatt) em 1958.
 
 O perceptron é um dos primeiros modelos de neurônio artificial e constitui a base histórica das áreas de:
 
@@ -205,3 +209,5 @@ Isso demonstra a limitação fundamental do perceptron para problemas **não lin
 * **Autor:** Natam Leão Ferreira
 * **Conclusão:** 2026
 ---
+
+</div>
