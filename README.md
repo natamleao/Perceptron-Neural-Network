@@ -137,7 +137,7 @@ Perceptron-Neural-Network/
 Clone o repositório:
 
 ```
-git git@github.com:natamleao/Perceptron-Neural-Network.git
+git clone git@github.com:natamleao/Perceptron-Neural-Network.git
 cd Perceptron-Neural-Network
 
 ```
