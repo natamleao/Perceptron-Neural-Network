@@ -124,9 +124,9 @@ Perceptron-Neural-Network/
 │
 ├── tests/            # testes automatizados (pytest)
 │
-├── requirements.txt  # dependências do projeto
-├── README.md         # Documentação do projeto
-└── LICENSE           # Licença do projeto
+├── requirements.txt  # dependências 
+├── README.md         # Documentação 
+└── LICENSE           # Licença
 ```
 
 ---
