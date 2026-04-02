@@ -1,4 +1,4 @@
-# Perceptron Neural Network
+# *Perceptron Neural Network*
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![Pytest](https://img.shields.io/badge/Tests-pytest-green)
