@@ -161,7 +161,7 @@ Instale as dependências:
 pip install .
 ```
 
-Instale também a dependência de desenvolvimento `pytest` (opcional):
+Instale também as dependências de desenvolvimento (opcional):
 
 ```
 pip install .[dev]
