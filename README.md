@@ -158,8 +158,15 @@ source venv/bin/activate
 Instale as dependências:
 
 ```
-pip install -r requirements.txt
+pip install .
 ```
+
+Instale também a dependência de desenvolvimento `pytest` (opcional):
+
+```
+pip install .[dev]
+```
+
 > [!IMPORTANT]
 > ## Executar experimentos
 
