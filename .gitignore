@@ -1,5 +1,5 @@
 perceptron_experiments.ipynb
-.pytest_cache
+.pytest_cache/
 __pycache__/
 build/
 *.egg-info/
