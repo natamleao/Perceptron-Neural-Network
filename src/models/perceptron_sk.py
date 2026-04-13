@@ -52,7 +52,6 @@ class PerceptronSK:
         self._trainer = value
 
     def fit(self, X, y):
-        # Criar modelo e trainer
         n_inputs = X.shape[1]
         self.model = Perceptron(n_inputs, self.learning_rate)
         self.trainer = PerceptronTrainer()
