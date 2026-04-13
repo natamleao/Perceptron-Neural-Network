@@ -56,7 +56,6 @@ class PerceptronSK:
         self.model = Perceptron(n_inputs, self.learning_rate)
         self.trainer = PerceptronTrainer()
 
-        # Garantir que y tem shape (-1,1)
         if y.ndim == 1: y = y.reshape(-1,1)
 
         self.trainer.train(self.model, X, y, self.max_epochs, self.logger)
